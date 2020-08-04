@@ -5,7 +5,6 @@ const helmet = require("helmet");
 const app = express();
 
 // GLOBAL MIDDLEWARES
-// My
 
 // Set security HTTP Headers
 app.use(helmet());

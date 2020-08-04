@@ -339,7 +339,7 @@ section:nth-of-type(3) #gallery .mix:hover .card {
     opacity: 0;
 }
 section:nth-of-type(3) #gallery .mix:nth-child(1) .card {
-    background: url("img/me.jpg") center center/cover;
+    background: url("img/natours1.jpg") center center/cover;
 }
 section:nth-of-type(3) #gallery .mix:nth-child(2) .card {
     background: url("img/me.jpg") center center/cover;

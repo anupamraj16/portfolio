@@ -1,31 +1,31 @@
 {
-  "name": "portfolio",
-  "version": "1.0.0",
-  "description": "Anupam's Portfolio",
-  "main": "app.js",
-  "dependencies": {
-    "dotenv": "^8.2.0",
-    "express": "^4.17.1",
-    "helmet": "^3.23.3",
-    "html-to-text": "^5.1.1",
-    "nodemailer": "^6.4.10"
-  },
-  "devDependencies": {
-    "eslint": "^7.5.0",
-    "eslint-config-airbnb": "^18.2.0",
-    "eslint-config-prettier": "^6.11.0",
-    "eslint-plugin-import": "^2.22.0",
-    "eslint-plugin-jsx-a11y": "^6.3.1",
-    "eslint-plugin-node": "^11.1.0",
-    "eslint-plugin-prettier": "^3.1.4",
-    "eslint-plugin-react": "^7.20.3",
-    "nodemon": "^2.0.4",
-    "prettier": "^2.0.5"
-  },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon server.js"
-  },
-  "author": "Anupam Raj",
-  "license": "ISC"
+    "name": "portfolio",
+    "version": "1.0.0",
+    "description": "Anupam's Portfolio",
+    "main": "app.js",
+    "dependencies": {
+        "dotenv": "^8.2.0",
+        "express": "^4.17.1",
+        "helmet": "^3.23.3",
+        "html-to-text": "^5.1.1",
+        "nodemailer": "^6.4.10"
+    },
+    "devDependencies": {
+        "eslint": "^7.5.0",
+        "eslint-config-airbnb": "^18.2.0",
+        "eslint-config-prettier": "^6.11.0",
+        "eslint-plugin-import": "^2.22.0",
+        "eslint-plugin-jsx-a11y": "^6.3.1",
+        "eslint-plugin-node": "^11.1.0",
+        "eslint-plugin-prettier": "^3.1.4",
+        "eslint-plugin-react": "^7.20.3",
+        "nodemon": "^2.0.4",
+        "prettier": "^2.0.5"
+    },
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "node server.js"
+    },
+    "author": "Anupam Raj",
+    "license": "ISC"
 }
