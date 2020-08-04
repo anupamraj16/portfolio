@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no"
+        />
+        <meta
+            name="description"
+            content="Anupam is a Full-Stack Web Developer. Deep interest in relational/non-relational databases, frontend & backend technologies, REST APIs, version control, server/frontend rendered dynamic websites and much more."
+        />
+        <title>meet-Anupam</title>
+        <!-- HOSTED -->
+        <link
+            href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;1,300&display=swap"
+            rel="stylesheet"
+        />
+        <!-- <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
+        /> -->
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+        <!-- LOCAL -->
+        <link rel="stylesheet" href="style.css" />
+        <!-- <link rel='shortcut icon' href='favicon.ico' type='image/x-icon'/ > -->
+
+        <!-- HOSTED -->
+        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script> -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/3.3.1/mixitup.min.js"></script> -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+
+        <!-- LOCAL -->
+    </head>
+    <body>
+        <!-- HOME -->
+        <section id="home" class="flex home">
+            <div id="pt" class="canvas"></div>
+            <!-- fix the canvas -->
+            <div class="flex">
+                <div class="text">
+                    Hello, meet <span class="highlight">Anupam</span>-
+                    <br />
+                    A full-stack web developer.<br />
+                </div>
+
+                <a class="scroll button" id="scroll-to-about" href="#about"
+                    >Explore more
+                    <ion-icon
+                        class="main-arrow"
+                        name="arrow-forward-outline"
+                    ></ion-icon>
+                </a>
+
+                <!-- NAVIGATION -->
+                <nav class="flex" id="nav">
+                    <ul>
+                        <li>
+                            <a class="scroll active" id="nav-home" href="#home"
+                                >home</a
+                            >
+                        </li>
+                        <li>
+                            <a class="scroll" id="nav-about" href="#about"
+                                >about</a
+                            >
+                        </li>
+                        <li>
+                            <a class="scroll" id="nav-projects" href="#projects"
+                                >projects</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                class="scroll"
+                                id="nav-publications"
+                                href="#publications"
+                                >publications</a
+                            >
+                        </li>
+                        <li>
+                            <a class="scroll" id="nav-contact" href="#contact"
+                                >contact</a
+                            >
+                        </li>
+                        <li><ion-icon name="menu-outline"></ion-icon></li>
+                    </ul>
+                </nav>
+            </div>
+        </section>
+
+        <!-- ABOUT -->
+        <section id="about" class="flex">
+            <div class="container flex">
+                <div class="header" data-aos="fade-left">
+                    ABOUT
+                </div>
+                <div class="header-bar" data-aos="fade-right"></div>
+
+                <div class="skills flex row">
+                    <div class="flex" data-aos="fade-right">
+                        <img
+                            src="img/me.jpg"
+                            class="me"
+                            alt="Anupam Raj Image"
+                            data-aos="flip-right"
+                        />
+                        <!-- ABOUT ANUPAM TEXT -->
+                        <div class="label">Meet Anupam</div>
+                        <div class="skills-text">
+                            Anupam is a Full-Stack Web Developer based in
+                            Calgary, AB (Canada).
+
+                            <br />
+                            He has been working with relational/non-relational
+                            databases, frontend & backend technologies, REST
+                            APIs, version control, server/frontend rendered
+                            dynamic websites and much more.
+                            <br />
+
+                            He is available to work from a remote location and
+                            open to relocation.
+                            <br />
+                            <span class="page-link highlight"
+                                ><a
+                                    href="#contact"
+                                    id="scroll-to-contact"
+                                    class="scroll"
+                                    >Want to talk over a Coffee?</a
+                                ></span
+                            >
+                        </div>
+                    </div>
+                    <!-- BAR GRAPH -->
+                    <div class="flex block bars-wrap" data-aos="fade-left">
+                        <div class="bar flex">
+                            <div class="bar fill" style="width: 80%;">
+                                <div class="tag flex">JavaScript</div>
+                            </div>
+                            <span>80%</span>
+                        </div>
+
+                        <div class="bar flex">
+                            <div class="bar fill" style="width: 80%;">
+                                <div class="tag flex">Node.JS/Express</div>
+                            </div>
+                            <span>80%</span>
+                        </div>
+
+                        <div class="bar flex">
+                            <div class="bar fill" style="width: 80%;">
+                                <div class="tag flex">REST API</div>
+                            </div>
+                            <span>80%</span>
+                        </div>
+
+                        <div class="bar flex">
+                            <div class="bar fill" style="width: 80%;">
+                                <div class="tag flex">MySQL/Sequelize</div>
+                            </div>
+                            <span>80%</span>
+                        </div>
+
+                        <div class="bar flex">
+                            <div class="bar fill" style="width: 80%;">
+                                <div class="tag flex">
+                                    MongoDB/Mongoose
+                                </div>
+                            </div>
+                            <span>80%</span>
+                        </div>
+
+                        <div class="bar flex">
+                            <div class="bar fill" style="width: 70%;">
+                                <div class="tag flex">Python</div>
+                            </div>
+                            <span>70%</span>
+                        </div>
+
+                        <div class="bar flex">
+                            <div class="bar fill" style="width: 70%;">
+                                <div class="tag flex">Django</div>
+                            </div>
+                            <span>70%</span>
+                        </div>
+
+                        <div class="bar flex">
+                            <div class="bar fill" style="width: 60%;">
+                                <div class="tag flex">React</div>
+                            </div>
+                            <span>60%</span>
+                        </div>
+
+                        <div class="bar flex">
+                            <div class="bar fill" style="width: 60%;">
+                                <div class="tag flex">
+                                    HTML/CSS/Bootstrap
+                                </div>
+                            </div>
+                            <span>60%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- PROJECTS -->
+        <section class="flex" id="projects">
+            <div class="header" data-aos="fade-left">PROJECTS</div>
+            <div class="header-bar" data-aos="fade-right"></div>
+
+            <div class="flex row">
+                <button type="button" data-filter="all">
+                    ALL
+                </button>
+                <button type="button" data-filter=".js">
+                    JAVASCRIPT
+                </button>
+                <button type="button" data-filter=".python">
+                    PYTHON
+                </button>
+                <button type="button" data-filter=".react">
+                    REACT
+                </button>
+            </div>
+
+            <div id="gallery" class="container flex row wrap">
+                <div class="mix js">
+                    <div class="card"></div>
+                    <div class="text">
+                        <div>Made With JS/Node</div>
+                        <span class="highlight">JavaScript</span>
+                    </div>
+                    <button type="button">LEARN MORE</button>
+                </div>
+
+                <div class="mix js">
+                    <div class="card"></div>
+                    <div class="text">
+                        <div>Another Project With JS/Node</div>
+                        <span class="highlight">JavaScript/Node</span>
+                    </div>
+                    <button type="button">LEARN MORE</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- PUBLICATIONS -->
+        <section id="publications">
+            <div class="container flex">
+                <div class="header" data-aos="fade-left">
+                    PUBLICATIONS
+                </div>
+                <div class="header-bar" data-aos="fade-right"></div>
+
+                <div class="flex row wrap">
+                    <div class="flex row">
+                        <div class="publication-wrap" data-aos="fade-in">
+                            <div class="fade-wrap">
+                                <a
+                                    href="https://asmedigitalcollection.asme.org/POWER/proceedings-abstract/POWER2018/51395/V001T06A011/277449"
+                                    target="_blank"
+                                >
+                                    <div class="thumb" id="thumb-1"></div>
+                                    <div class="label">
+                                        Techno-Economic Analysis of a PV-Battery
+                                        System for a Commercial Building Under
+                                        Different Utility Rate Structures
+                                    </div>
+                                    <div class="date">OCTOBER 2018</div>
+                                    <div class="bar"></div>
+                                    <div class="text">
+                                        The synergy between solar photovoltaic
+                                        (PV) systems and behind-the-meter
+                                        battery storage to reduce utility costs
+                                        in buildings...
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="publication-wrap" data-aos="fade-in">
+                            <div class="fade-wrap">
+                                <a
+                                    href="https://www.sciencedirect.com/science/article/pii/S2351978920308131"
+                                    target="_blank"
+                                >
+                                    <div class="thumb" id="thumb-2"></div>
+                                    <div class="label">
+                                        Energy Conservation Building Code based
+                                        optimum wall composition with respect to
+                                        thermal transmittance and thickness...
+                                    </div>
+                                    <div class="date">MAY, 2020</div>
+                                    <div class="bar"></div>
+                                    <div class="text">
+                                        A surge in the commercial sector
+                                        especially in the Tier-1 cities has been
+                                        identified across the country. Due to
+                                        the demand for an increase in the
+                                        commercial spaces...
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex row">
+                        <div class="publication-wrap" data-aos="fade-in">
+                            <div class="fade-wrap">
+                                <a
+                                    href="https://www.sciencedirect.com/science/article/pii/S235197892030812X"
+                                    target="_blank"
+                                >
+                                    <div class="thumb" id="thumb-3"></div>
+                                    <div class="label">
+                                        Optimization based feasibility analysis
+                                        for Energy Conservation Building Code
+                                        compliance of opaque wall assemblies...
+                                    </div>
+                                    <div class="date">MAY 2020</div>
+                                    <div class="bar"></div>
+                                    <div class="text">
+                                        Thermal performance of building
+                                        envelopes is the determinant factor of
+                                        building energy consumption. The total
+                                        built up area of commercial buildings...
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="publication-wrap" data-aos="fade-in">
+                            <div class="fade-wrap">
+                                <a
+                                    href="https://www.sciencedirect.com/science/article/pii/S2351978920308118"
+                                    target="_blank"
+                                >
+                                    <div class="thumb" id="thumb-4"></div>
+                                    <div class="label">
+                                        Optimization based feasibility study for
+                                        filler slabs as a response towards the
+                                        Energy Conservation Building Code roof
+                                        compliance...
+                                    </div>
+                                    <div class="date">MAY, 2020</div>
+                                    <div class="bar"></div>
+                                    <div class="text">
+                                        The Energy Conservation Building Code
+                                        will soon be made mandatory pan India
+                                        and the building designs must comply
+                                        with the criteria for energy
+                                        efficiency...
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT -->
+        <section id="contact">
+            <div class="container flex">
+                <div class="header" data-aos="fade-left">
+                    CONTACT
+                </div>
+                <div class="header-bar" data-aos="fade-right"></div>
+                <div class="text" data-aos="fade-in">
+                    Have a question or want to work together?
+                </div>
+                <form
+                    action="https://formspree.io/mqkynpqr"
+                    method="POST"
+                    class="form"
+                    data-aos="zoom-in"
+                    id="contact-form"
+                >
+                    <input
+                        placeholder="Name"
+                        type="text"
+                        name="name"
+                        required
+                    />
+                    <br />
+                    <input
+                        placeholder="Email"
+                        type="email"
+                        name="_replyto"
+                        required
+                    />
+                    <br />
+                    <textarea
+                        placeholder="Your Message"
+                        name="message"
+                    ></textarea>
+
+                    <div class="text">
+                        Your message was sent successfully. Thanks!
+                    </div>
+
+                    <button type="submit" value="SUBMIT">
+                        SUBMIT
+                    </button>
+                </form>
+            </div>
+        </section>
+        <footer>
+            <a href="#home" class="scroll" id="scroll-to-home"
+                ><ion-icon name="chevron-up-circle-outline"></ion-icon
+            ></a>
+
+            <div class="flex row">
+                <a
+                    href="https://www.linkedin.com/in/anupam-raj/"
+                    target="_blank"
+                >
+                    <ion-icon name="logo-linkedin"></ion-icon>
+                </a>
+                <a
+                    href="https://www.linkedin.com/in/anupam-raj/"
+                    target="_blank"
+                >
+                    <ion-icon name="logo-github"></ion-icon>
+                </a>
+                <a
+                    href="https://www.linkedin.com/in/anupam-raj/"
+                    target="_blank"
+                >
+                    <ion-icon name="logo-facebook"></ion-icon>
+                </a>
+            </div>
+
+            <div class="footnote">
+                Anupam Raj <span class="highlight">&copy;2020</span>
+            </div>
+        </footer>
+
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/3.3.1/mixitup.min.js"></script> -->
+        <!-- <script src="http://cdn.jsdelivr.net/jquery.mixitup/latest/jquery.mixitup.min.js"></script> -->
+        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script> -->
+        <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init({ offset: 250, duration: 1000 });
+        </script>
+        <script src="scripts/mixitup.min.js"></script>
+        <script src="scripts/pt.min.js"></script>
+        <script src="scripts/canvas.js"></script>
+        <script src="scripts/index.js"></script>
+        <script src="scripts/nav.js"></script>
+    </body>
+</html>
