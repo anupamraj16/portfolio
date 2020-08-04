@@ -80,7 +80,6 @@ $(document).ready(function () {
     });
 
     // MixItUp
-    // $("#gallery").mixItUp({});
     mixitup("#gallery", {
         animation: {
             duration: 700,
