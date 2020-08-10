@@ -115,9 +115,9 @@
 
                             <br />
                             He has been working with relational/non-relational
-                            databases, frontend & backend technologies, REST
-                            APIs, version control, server/frontend rendered
-                            dynamic websites and much more.
+                            databases, frontend & backend technologies,
+                            REST/GraphQL APIs, version control, server/frontend
+                            rendered dynamic websites and much more.
                             <br />
 
                             He is available to work from a remote location and
@@ -127,8 +127,8 @@
                                 ><a
                                     href="#contact"
                                     id="scroll-to-contact"
-                                    class="scroll"
-                                    >Want to talk over a Coffee?</a
+                                    class="scroll bold"
+                                    >Want to talk more over a Coffee?</a
                                 ></span
                             >
                         </div>
@@ -136,69 +136,83 @@
                     <!-- BAR GRAPH -->
                     <div class="flex block bars-wrap" data-aos="fade-left">
                         <div class="bar flex">
-                            <div class="bar fill" style="width: 80%;">
-                                <div class="tag flex">JavaScript</div>
+                            <div
+                                class="bar fill"
+                                data-width="80%;"
+                                data-delay="500"
+                            ></div>
+                            <div class="tag flex">JavaScript</div>
+                            <span>80%</span>
+                        </div>
+
+                        <div class="bar flex">
+                            <div
+                                class="bar fill"
+                                data-width="80%;"
+                                data-delay="600"
+                            ></div>
+                            <div class="tag flex">Node.JS/Express</div>
+                            <span>80%</span>
+                        </div>
+
+                        <div class="bar flex">
+                            <div
+                                class="bar fill"
+                                data-width="80%;"
+                                data-delay="700"
+                            ></div>
+                            <div class="tag flex">REST/GraphQL API</div>
+                            <span>80%</span>
+                        </div>
+
+                        <div class="bar flex">
+                            <div
+                                class="bar fill"
+                                data-width="80%;"
+                                data-delay="800"
+                            ></div>
+                            <div class="tag flex">
+                                MongoDB/Mongoose
                             </div>
                             <span>80%</span>
                         </div>
 
                         <div class="bar flex">
-                            <div class="bar fill" style="width: 80%;">
-                                <div class="tag flex">Node.JS/Express</div>
-                            </div>
-                            <span>80%</span>
+                            <div
+                                class="bar fill"
+                                data-width="70%;"
+                                data-delay="900"
+                            ></div>
+                            <div class="tag flex">MySQL/Sequelize</div>
+                            <span>70%</span>
                         </div>
-
                         <div class="bar flex">
-                            <div class="bar fill" style="width: 80%;">
-                                <div class="tag flex">REST API</div>
-                            </div>
-                            <span>80%</span>
-                        </div>
-
-                        <div class="bar flex">
-                            <div class="bar fill" style="width: 80%;">
-                                <div class="tag flex">MySQL/Sequelize</div>
-                            </div>
-                            <span>80%</span>
-                        </div>
-
-                        <div class="bar flex">
-                            <div class="bar fill" style="width: 80%;">
-                                <div class="tag flex">
-                                    MongoDB/Mongoose
-                                </div>
-                            </div>
-                            <span>80%</span>
-                        </div>
-
-                        <div class="bar flex">
-                            <div class="bar fill" style="width: 70%;">
-                                <div class="tag flex">Python</div>
-                            </div>
+                            <div
+                                class="bar fill"
+                                data-width="70%;"
+                                data-delay="1000"
+                            ></div>
+                            <div class="tag flex">Python</div>
                             <span>70%</span>
                         </div>
 
                         <div class="bar flex">
-                            <div class="bar fill" style="width: 70%;">
-                                <div class="tag flex">Django</div>
-                            </div>
+                            <div
+                                class="bar fill"
+                                data-width="70%;"
+                                data-delay="1100"
+                            ></div>
+                            <div class="tag flex">Django</div>
                             <span>70%</span>
                         </div>
 
                         <div class="bar flex">
-                            <div class="bar fill" style="width: 60%;">
-                                <div class="tag flex">React</div>
-                            </div>
-                            <span>60%</span>
-                        </div>
-
-                        <div class="bar flex">
-                            <div class="bar fill" style="width: 60%;">
-                                <div class="tag flex">
-                                    HTML/CSS/Bootstrap
-                                </div>
-                            </div>
+                            <div
+                                class="bar fill"
+                                data-width="60%;"
+                                data-delay="1200"
+                            ></div>
+                            <div class="tag flex">React</div>
                             <span>60%</span>
                         </div>
                     </div>
@@ -210,8 +224,8 @@
             <div class="header" data-aos="fade-left">PROJECTS</div>
             <div class="header-bar" data-aos="fade-right"></div>
 
-            <div class="flex row">
-                <button type="button" data-filter="all">
+            <div id="project-filter" class="flex row">
+                <button class="active" type="button" data-filter="all">
                     ALL
                 </button>
                 <button type="button" data-filter=".js">
@@ -226,6 +240,27 @@
             </div>
 
             <div id="gallery" class="container flex row wrap">
+                <div class="mix js" data-aos="fade-in">
+                    <div class="card"></div>
+                    <div class="text">
+                        <div>
+                            Natours: Exciting Tours
+                        </div>
+                        <span class="highlight">JavaScript/Node.js</span>
+                    </div>
+                    <button type="button" id="natours">LEARN MORE</button>
+                </div>
+
+                <div class="mix js" data-aos="fade-left">
+                    <div class="card"></div>
+                    <div class="text">
+                        <div>
+                            Natours: Exciting Tours
+                        </div>
+                        <span class="highlight">JavaScript/Node.js</span>
+                    </div>
+                    <button type="button">LEARN MORE</button>
+                </div>
                 <div class="mix js">
                     <div class="card"></div>
                     <div class="text">
@@ -236,16 +271,58 @@
                     </div>
                     <button type="button">LEARN MORE</button>
                 </div>
-
-                <!-- <div class="mix js">
+                <div class="mix js">
                     <div class="card"></div>
                     <div class="text">
-                        <div>Another Project With JS/Node</div>
-                        <span class="highlight">JavaScript/Node</span>
+                        <div>
+                            Natours: Exciting Tours
+                        </div>
+                        <span class="highlight">JavaScript/Node.js</span>
                     </div>
                     <button type="button">LEARN MORE</button>
-                </div> -->
+                </div>
             </div>
+
+            <!-- MODAL -->
+            <!-- <div class="modal-wrap flex"> -->
+            <!-- <div class="mask"> -->
+            <div class="modal flex" id="modal">
+                <div class="carousel-wrap">
+                    <div class="window">
+                        <div id="carousel">
+                            <div class="slide"></div>
+                            <div class="slide"></div>
+                            <div class="slide"></div>
+                        </div>
+                        <ion-icon
+                            id="carousel-previous"
+                            name="play-back-circle-outline"
+                        ></ion-icon>
+                        <ion-icon
+                            id="carousel-next"
+                            name="play-forward-circle-outline"
+                        ></ion-icon>
+                    </div>
+                </div>
+                <div class="info-box">
+                    <div class="title"></div>
+                    <div class="tag"></div>
+                    <div class="detail"></div>
+                    <a class="button" href="#" target="_blank">
+                        <ion-icon
+                            id="open-website"
+                            name="open-outline"
+                        ></ion-icon
+                        >VIEW SITE
+                    </a>
+                    <ion-icon
+                        id="modal-close"
+                        name="close-circle-outline"
+                    ></ion-icon>
+                </div>
+            </div>
+            <!-- </div> -->
+            <!-- </div> -->
         </section>
 
         <!-- PUBLICATIONS -->
@@ -398,7 +475,7 @@
                         name="message"
                     ></textarea>
 
-                    <div class="text">
+                    <div id="show-text" class="text hidden">
                         Your message was sent successfully. Thanks!
                     </div>
 
@@ -420,18 +497,15 @@
                 >
                     <ion-icon name="logo-linkedin"></ion-icon>
                 </a>
-                <a
-                    href="https://www.linkedin.com/in/anupam-raj/"
-                    target="_blank"
-                >
+                <a href="https://github.com/anupamraj7/natours" target="_blank">
                     <ion-icon name="logo-github"></ion-icon>
                 </a>
-                <a
+                <!-- <a
                     href="https://www.linkedin.com/in/anupam-raj/"
                     target="_blank"
                 >
                     <ion-icon name="logo-facebook"></ion-icon>
-                </a>
+                </a> -->
             </div>
 
             <div class="footnote">
@@ -446,7 +520,11 @@
         <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
         <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
         <script>
-            AOS.init({ offset: 250, duration: 1000 });
+            AOS.init({
+                offset: -500,
+                duration: 1000,
+                anchorPlacement: "top-top",
+            });
         </script>
         <script src="scripts/mixitup.min.js"></script>
         <script src="scripts/pt.min.js"></script>
