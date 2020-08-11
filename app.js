@@ -9,8 +9,7 @@ app.enable("trust proxy");
 const transporter = nodemailer.createTransport(
     sendgridTransport({
         auth: {
-            api_key:
-                "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",
+            api_key: process.env.SENDGRID_PASSWORD,
         },
     })
 );
@@ -24,7 +23,6 @@ app.use(helmet());
 app.use(express.urlencoded({ extended: true, limit: "10kb" }));
 
 app.post("/sendmail", async (req, res, next) => {
-    console.log(req.body.email, req.body.message);
     await transporter.sendMail({
         to: "raj.anupam16@gmail.com",
         from: "raj.anupam16@gmail.com",
