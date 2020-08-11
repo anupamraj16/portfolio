@@ -328,7 +328,6 @@ section:nth-of-type(3) button:focus {
     opacity: 0;
 }
 #gallery .mix:hover .text {
-    cursor: default;
     opacity: 1;
     top: 24%;
 }
@@ -347,22 +346,28 @@ section:nth-of-type(3) button:focus {
     bottom: 24%;
     opacity: 1;
 }
-/* .transition {
+.transition {
     transition: 0.7s;
-} */
+}
 #gallery .mix:nth-child(1) .card {
-    background: url("img/slides/natours0.jpg") center center/cover;
+    background: url("img/natours.jpg") center center/cover;
 }
 #gallery .mix:nth-child(2) .card {
-    background: url("img/slides/natours0.jpg") center center/cover;
+    background: url("img/slides/omnifood-0.jpg") center center/cover;
 }
 #gallery .mix:nth-child(3) .card {
-    background: url("img/slides/natours0.jpg") center center/cover;
+    background: url("img/slides/natours-1.jpg") center center/cover;
+}
+#gallery .mix:nth-child(4) .card {
+    background: url("img/slides/omnifood-0.jpg") center center/cover;
 }
 
 /* ----------------------------------------------- */
 /* SECTION- PUBLICATIONS */
 /* ----------------------------------------------- */
+.publication-wrap {
+    height: 450px;
+}
 
 section:nth-of-type(4) .publication-wrap #thumb-1 {
     background: url("/img/pv.jpg") center center/cover;
@@ -375,11 +380,6 @@ section:nth-of-type(4) .publication-wrap #thumb-3 {
 }
 section:nth-of-type(4) .publication-wrap #thumb-4 {
     background: url("/img/energy.jpg") center center/cover;
-}
-
-section:nth-of-type(4) .fade-wrap {
-    /* align-items: start; */
-    height: 450px;
 }
 
 section:nth-of-type(4) .label {
@@ -516,7 +516,7 @@ footer ion-icon {
     position: fixed;
     left: 0;
     top: 0;
-    background: rgba(170, 161, 154, 0.5);
+    background: rgba(0, 0, 0, 0.6);
     height: 100%;
     width: 100%;
     z-index: 10;
@@ -555,55 +555,48 @@ footer ion-icon {
     background: #fff;
     position: fixed;
     width: 50%;
-    height: 80%;
+    height: 90%;
     left: 25%;
+    overflow: hidden;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4);
-    transform: scale(0.8);
+    transform: scale(0.75);
     transition: all 0.8s;
 }
 .modal-window.show {
     transform: scale(1);
 }
 .carousel-wrap {
-    position: relative;
-    height: 60%;
-    width: 100%;
+    height: 65%;
     margin: 0 auto;
+    position: relative;
 }
 
-.window {
-    background: #222;
-    height: 100%;
-    width: 100%;
-}
 #carousel {
-    /* position: fixed;
-    top: 0;
-    left: 0; */
+    left: -100%;
+    width: 400%;
     height: 100%;
-    width: 100%;
+    position: relative;
 }
 .slide {
-    position: fixed;
-    top: 0;
-    left: 0;
+    cursor: pointer;
     height: 100%;
-    width: 100%;
+    width: 25%;
+    float: left;
 }
 
 /* INFO-BOX */
 .modal .info-box {
     position: fixed;
-    height: 40%;
+    height: 35%;
     width: 100%;
     border-top: 3px solid #2a2a2a;
     padding: 0 20px 15px 20px;
     background: #fff;
 }
 .modal .title {
-    font-size: 120%;
+    font-size: 140%;
     font-weight: 500;
-    padding: 30px 0 0 0;
+    padding: 20px 0 0 0;
 }
 .modal .tag {
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
@@ -611,11 +604,12 @@ footer ion-icon {
     display: block;
     font-size: 70%;
     font-weight: 500;
-    padding: 10px 0 15px 0;
+    padding: 10px 0;
 }
 .modal .detail {
     font-size: 80%;
     font-weight: 300;
+    color: black;
     line-height: 140%;
     margin-top: 12px;
 }

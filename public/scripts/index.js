@@ -23,7 +23,7 @@ $(document).ready(function () {
         currentClass: "active",
         changeHash: false,
         scrollSpeed: 750,
-        scrollThreshold: 0.5,
+        scrollThreshold: 0.3,
         filter: "",
         easing: "swing",
     });
@@ -71,6 +71,22 @@ $(document).ready(function () {
             offset: "500px",
         }
     );
+
+    // FADE OTHER PUBLICATION
+    $(".publication-wrap").hover(
+        function () {
+            $(this).siblings($(this)).fadeTo(100, 0.5);
+            $(this).parent().siblings().fadeTo(100, 0.5);
+        },
+        function () {
+            $(this).siblings($(this)).fadeTo(100, 1);
+            $(this).parent().siblings().fadeTo(100, 1);
+        }
+    );
+    // $(".publication-wrap").on("hover", ".fade", function () {
+    //     $(".fade").fadeTo(600, 0.5);
+    // });
+    // console.log($(".publication-wrap"));
 
     // MESSAGE SUBMITTED TEXT
     $("#show-text").click(function (e) {

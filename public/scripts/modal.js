@@ -1,4 +1,10 @@
 $(document).ready(function () {
+    var carousel = $("#carousel"),
+        slideWidth = 700,
+        threshold = slideWidth / 3,
+        dragStart,
+        dragEnd;
+
     // SHOW MODAL
     var modal = $("#modal");
     var modalWindow = $(".modal-window");
@@ -17,13 +23,13 @@ $(document).ready(function () {
     modalWindow.click(function (e) {
         e.stopPropagation();
     });
-    $(window).click(function (event) {
-        if (event.target !== modalWindow) {
+    $(window).mousedown(function (event) {
+        if (event.target.id == "modal") {
             modal.hide();
         }
     });
 
-    //GALLERY MODAL
+    // FILL MODAL WITH DATA
     var modalText = {
         natours: {
             title: "Natours: Exciting Tours For Adventurous People",
@@ -34,7 +40,7 @@ $(document).ready(function () {
         },
         omnifood: {
             title: "Omnifood",
-            tag: "Order food from your home",
+            tag: "ORDER FOOD FROM YOUR HOME",
             detail: "Fresh food. Skip your dishes",
             link: "https://google.com",
         },
@@ -45,25 +51,23 @@ $(document).ready(function () {
         $("#modal .tag").text(modalText[id].tag);
         if (modalText[id].link) $("#modal a").attr("href", modalText[id].link);
 
-        $.each($("#modal .slide"), function (index, value) {
+        $.each($(".slide"), function (index, value) {
             $(this).css({
                 background:
                     "url('img/slides/" +
                     id +
+                    "-" +
                     index +
                     ".jpg') center center/cover",
             });
         });
+        // $(".slide").css("display", "none");
     }
 
     $("#gallery button").on("click", function () {
         fillModal(this.id);
     });
-    var carousel = $("#carousel"),
-        slideWidth = 700,
-        threshold = slideWidth / 3,
-        dragStart,
-        dragEnd;
+
     $("#carousel-next").click(function () {
         shiftSlide(-1);
     });
@@ -71,14 +75,36 @@ $(document).ready(function () {
         shiftSlide(1);
     });
 
+    // DRAGGING IMAGE FUNCTION
+    carousel.on("mousedown", function () {
+        dragStart = event.pageX;
+        $(this).on("mousemove", function () {
+            dragEnd = event.pageX;
+            $(this).css("transform", "translateX(" + drag() + "px)");
+        });
+        $(document).on("mouseup", function () {
+            if (drag() > threshold) {
+                return shiftSlide(1);
+            }
+            if (drag() < -threshold) {
+                return shiftSlide(-1);
+            }
+            shiftSlide(0);
+        });
+    });
+
+    function drag() {
+        return dragEnd - dragStart;
+    }
+
+    // SLIDE IMAGE
     function shiftSlide(direction) {
-        if (carousel.hasClass("transition")) return;
         dragEnd = dragStart;
         $(document).off("mouseup");
-        $("#carousel")
+        carousel
             .off("mousemove")
             .addClass("transition")
-            .css("transform", "translateX('+ direction * slideWidth +'px)");
+            .css("transform", "translateX(" + direction * slideWidth + "px)");
         setTimeout(function () {
             if (direction === 1) {
                 $(".slide:first").before($(".slide:last"));
