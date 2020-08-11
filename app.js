@@ -1,8 +1,19 @@
 const express = require("express");
-
+const nodemailer = require("nodemailer");
+const sendgridTransport = require("nodemailer-sendgrid-transport");
 const helmet = require("helmet");
 
 const app = express();
+app.enable("trust proxy");
+
+const transporter = nodemailer.createTransport(
+    sendgridTransport({
+        auth: {
+            api_key:
+                "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",
+        },
+    })
+);
 
 // GLOBAL MIDDLEWARES
 
@@ -10,7 +21,19 @@ const app = express();
 app.use(helmet());
 
 // Body-Parser. Reading data from body into req.body
-app.use(express.json({ limit: "10kb" }));
+app.use(express.urlencoded({ extended: true, limit: "10kb" }));
+
+app.post("/sendmail", async (req, res, next) => {
+    console.log(req.body.email, req.body.message);
+    await transporter.sendMail({
+        to: "raj.anupam16@gmail.com",
+        from: "raj.anupam16@gmail.com",
+        subject: "You Got Mail from Portfolio",
+        html: req.body.message,
+    });
+    res.redirect("/");
+    next();
+});
 
 app.get("/", (req, res) => {
     res.redirect("/portfolio.html");
