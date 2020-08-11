@@ -1,5 +1,8 @@
 /*
 Orange color: #e67e22
+#d24d57
+#e39f1c
+#7fb0a6
 */
 
 /* ----------------------------------------------- */
@@ -80,8 +83,6 @@ a {
     top: 0;
     width: 100vw;
     background: #252934;
-
-    z-index: 0;
 }
 .home {
     height: 100vh;
@@ -227,6 +228,9 @@ section:nth-of-type(2) .skills-text {
     font-size: 80%;
     line-height: 140%;
     font-weight: 400;
+}
+section:nth-of-type(2) .skills-text a:hover {
+    color: #c0392b;
 }
 
 section:nth-of-type(2) .bars-wrap {
