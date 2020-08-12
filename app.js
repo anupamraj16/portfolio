@@ -22,14 +22,17 @@ app.use(helmet());
 // Body-Parser. Reading data from body into req.body
 app.use(express.urlencoded({ extended: true, limit: "10kb" }));
 
-app.post("/sendmail", async (req, res, next) => {
+app.post("/email", async (req, res, next) => {
+    const name = req.body.name;
+    const email = req.body.email;
+
     await transporter.sendMail({
-        to: "raj.anupam16@gmail.com",
-        from: "raj.anupam16@gmail.com",
-        subject: "You Got Mail from Portfolio",
+        to: "anupam.raj@asu.edu",
+        from: "king.anupam.raj@gmail.com",
+        subject: `You Got Mail from ${name} | ${email}`,
         html: req.body.message,
     });
-    res.redirect("/");
+    res.status(204).send();
     next();
 });
 

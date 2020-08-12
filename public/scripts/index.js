@@ -83,16 +83,67 @@ $(document).ready(function () {
             $(this).parent().siblings().fadeTo(100, 1);
         }
     );
-    // $(".publication-wrap").on("hover", ".fade", function () {
-    //     $(".fade").fadeTo(600, 0.5);
-    // });
-    // console.log($(".publication-wrap"));
 
     // MESSAGE SUBMITTED TEXT
-    $("#show-text").click(function (e) {
-        e.preventDefault();
-        $(this).removeClass("hidden");
+
+    $("form").submit(function (event) {
+        event.preventDefault();
+
+        url = $("form").attr("action");
+
+        /* Send the data using post with element id name and name2*/
+        var posting = $.post(url, {
+            name: $("#name").val(),
+            email: $("#email").val(),
+            message: $("#message").val(),
+        });
+        /* Alerts the results */
+        posting.done(function () {
+            $("#contact .text")
+                .parent()
+                .fadeTo(0, 0)
+                .delay(300)
+                .children()
+                .text("Anupam will be in touch!!")
+                .css("color", "#e67e22");
+            $("#contact .text").parent().delay(300).fadeTo(500, 1);
+            $("form").delay(500).trigger("reset");
+        });
+        posting.fail(function () {
+            $("#contact .text")
+                .parent()
+                .fadeTo(0, 0)
+                .delay(300)
+                .children()
+                .text("Something Went Wrong! Please try again.")
+                .css("color", "red");
+            $("#contact .text").parent().delay(300).fadeTo(500, 1);
+        });
     });
+
+    // $("form button").click(function (e) {
+    //     e.preventDefault();
+    //     $.ajax({
+    //         url: "/email",
+    //         type: "POST",
+    //         data: $("form").serialize(),
+    //         dataType: "json",
+    //         beforeSend: function (x) {
+    //             if (x && x.overrideMimeType) {
+    //                 x.overrideMimeType("application/json;charset=UTF-8");
+    //             }
+    //         },
+    //         success: function (data) {
+    //             console.log(data);
+    // $("form button").click(function () {
+    //     $("#contact .text")
+    //         .delay(1000)
+    //         .text("Anupam will be in touch.")
+    //         .css("color", "orange");
+    // });
+    //         },
+    //     });
+    // });
 
     // SCROLLING- REPETITIVE CODE
     // $(".js--scroll--to--home").click(function () {

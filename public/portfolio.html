@@ -473,19 +473,22 @@
                     CONTACT
                 </div>
                 <div class="header-bar" data-aos="fade-right"></div>
-                <div class="text" data-aos="fade-in">
-                    Have a question or want to work together?
+                <div>
+                    <div class="text">
+                        Have a question or want to work together?
+                    </div>
                 </div>
                 <!-- action="https://formspree.io/mqkynpqr" -->
                 <!-- name="_replyto" -->
                 <form
-                    action="/sendmail"
+                    action="/email"
                     method="POST"
                     class="form"
                     data-aos="zoom-in"
                     id="contact-form"
                 >
                     <input
+                        id="name"
                         placeholder="Name"
                         type="text"
                         name="name"
@@ -493,6 +496,7 @@
                     />
                     <br />
                     <input
+                        id="email"
                         placeholder="Email"
                         type="email"
                         name="email"
@@ -500,14 +504,10 @@
                     />
                     <br />
                     <textarea
+                        id="message"
                         placeholder="Your Message"
                         name="message"
                     ></textarea>
-
-                    <div id="show-text" class="text hidden">
-                        Your message was sent successfully. Thanks!
-                    </div>
-
                     <button type="submit" value="SUBMIT">
                         SUBMIT
                     </button>
