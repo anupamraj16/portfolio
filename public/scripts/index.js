@@ -107,6 +107,7 @@ $(document).ready(function () {
                 .text("Anupam will be in touch!!")
                 .css("color", "#e67e22");
             $("#contact .text").parent().delay(300).fadeTo(500, 1);
+
             $("form").delay(500).trigger("reset");
         });
         posting.fail(function () {
