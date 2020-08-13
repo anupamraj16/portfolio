@@ -31,12 +31,12 @@ $(document).ready(function () {
 
     // FILL MODAL WITH DATA
     var modalText = {
-        natours: {
-            title: "Natours: Exciting Tours For Adventurous People",
-            tag: "LIVE ADVENTURES LIKE YOU NEVER HAVE BEFORE.",
+        excursion: {
+            title: "Excursion: Plan Your Long Weekend",
+            tag: "AROUND THE WORLD",
             detail:
-                "Natours is a platform that lets adventurous people discover new experiences.",
-            link: "https://raj-tours.herokuapp.com",
+                "Excursion is a platform that lets adventurous people discover new experiences.",
+            link: "https://long-weekend.herokuapp.com",
         },
         omnifood: {
             title: "Omnifood",
