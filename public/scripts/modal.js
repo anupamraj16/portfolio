@@ -38,11 +38,11 @@ $(document).ready(function () {
                 "Excursion is a platform that lets adventurous people discover new experiences.",
             link: "https://long-weekend.herokuapp.com",
         },
-        omnifood: {
-            title: "Omnifood",
-            tag: "ORDER FOOD FROM YOUR HOME",
-            detail: "Fresh food. Skip your dishes",
-            link: "https://google.com",
+        shoppers: {
+            title: "Shopper's",
+            tag: "REDEFINING ONLINE SHOPPING",
+            detail: "Shopping at your fingertips.",
+            link: "https://oneclickshopping.herokuapp.com/",
         },
     };
     function fillModal(id) {

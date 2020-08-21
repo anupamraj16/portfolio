@@ -356,7 +356,9 @@ section:nth-of-type(3) button:focus {
 #gallery .mix:nth-child(1) .card {
     background: url("img/excursion.jpg") center center/cover;
 }
-
+#gallery .mix:nth-child(2) .card {
+    background: url("img/shoppers.jpg") center center/cover;
+}
 /* ----------------------------------------------- */
 /* SECTION- PUBLICATIONS */
 /* ----------------------------------------------- */
