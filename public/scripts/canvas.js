@@ -9,7 +9,7 @@ function floatySpace() {
     // Elements
     var pts = [];
     var center = space.size.$divide(1.8);
-    var angle = window.innerWidth * 0.5;
+    var angle = window.innerHeight;
     var count = window.innerWidth * 5;
     if (count > 500) count = 500;
     var line = new Line(0, angle).to(space.size.x, 0);
@@ -54,7 +54,7 @@ function floatySpace() {
                     if (pts[i].brightness > 0.1) pts[i].brightness -= 0.01;
                 }
 
-                var color = "rgba(255,255,255," + pts[i].brightness + ")";
+                var color = "rgba(126,126,126," + pts[i].brightness + ")";
                 form.stroke(color).fill(true).line(ln1);
             }
         },
