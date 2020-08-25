@@ -22,7 +22,7 @@ $(document).ready(function () {
     $("#nav").onePageNav({
         currentClass: "active",
         changeHash: false,
-        scrollSpeed: 750,
+        scrollSpeed: 1000,
         scrollThreshold: 0.3,
         filter: "",
         easing: "swing",
@@ -160,5 +160,17 @@ $(document).ready(function () {
         animation: {
             duration: 700,
         },
+    });
+
+    /* Mobile navigation */
+    $(".mobile-nav-icon").click(function () {
+        var nav = $(".main-nav");
+        var icon = $(".mobile-nav-icon ion-icon");
+        nav.slideToggle(200);
+        if (icon.attr("name") === "menu-outline") {
+            icon.attr("name", "close-outline");
+        } else if (icon.attr("name", "close-outline")) {
+            icon.attr("name", "menu-outline");
+        }
     });
 });

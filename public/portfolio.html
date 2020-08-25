@@ -51,8 +51,8 @@
                 </a>
 
                 <!-- NAVIGATION -->
-                <nav class="flex" id="nav">
-                    <ul>
+                <nav class="flex row" id="nav">
+                    <ul class="flex row main-nav">
                         <li>
                             <a class="scroll active" id="nav-home" href="#home"
                                 >home</a
@@ -82,8 +82,10 @@
                                 >contact</a
                             >
                         </li>
-                        <li><ion-icon name="menu-outline"></ion-icon></li>
                     </ul>
+                    <li class="mobile-nav-icon">
+                        <ion-icon name="menu-outline"></ion-icon>
+                    </li>
                 </nav>
             </div>
         </section>
@@ -107,7 +109,7 @@
                                 </div>
                             </div>
                             <div class="label bold">
-                                Fast
+                                Fast Load Times
                             </div>
                         </div>
                         <div
@@ -121,7 +123,7 @@
                                 </div>
                             </div>
                             <div class="label bold">
-                                Responsive
+                                Responsive Design
                             </div>
                         </div>
 
@@ -165,7 +167,11 @@
                             data-aos="flip-right"
                         />
                         <!-- ABOUT ANUPAM TEXT -->
-                        <div class="label">Meet Anupam</div>
+                        <div class="label">
+                            Meet Anupam
+                            <hr />
+                        </div>
+
                         <div class="skills-text">
                             Anupam is a Full-Stack Web Developer.
 
@@ -527,22 +533,32 @@
         <!-- CONTACT -->
         <section id="contact">
             <div class="container flex">
-                <div class="header" data-aos="fade-left">
+                <div
+                    class="header"
+                    data-aos="fade-left"
+                    data-aos-anchor-placement="top-bottom"
+                    data-aos-offset="300"
+                >
                     CONTACT
                 </div>
-                <div class="header-bar" data-aos="fade-right"></div>
+                <div
+                    class="header-bar"
+                    data-aos="fade-right"
+                    data-aos-anchor-placement="top-bottom"
+                    data-aos-offset="300"
+                ></div>
                 <div>
                     <div class="text">
                         Have a question or want to work together?
                     </div>
                 </div>
-                <!-- action="https://formspree.io/mqkynpqr" -->
-                <!-- name="_replyto" -->
                 <form
                     action="/email"
                     method="POST"
                     class="form"
                     data-aos="zoom-in"
+                    data-aos-anchor-placement="top-bottom"
+                    data-aos-offset="300"
                     id="contact-form"
                 >
                     <input
