@@ -122,30 +122,6 @@ $(document).ready(function () {
         });
     });
 
-    // $("form button").click(function (e) {
-    //     e.preventDefault();
-    //     $.ajax({
-    //         url: "/email",
-    //         type: "POST",
-    //         data: $("form").serialize(),
-    //         dataType: "json",
-    //         beforeSend: function (x) {
-    //             if (x && x.overrideMimeType) {
-    //                 x.overrideMimeType("application/json;charset=UTF-8");
-    //             }
-    //         },
-    //         success: function (data) {
-    //             console.log(data);
-    // $("form button").click(function () {
-    //     $("#contact .text")
-    //         .delay(1000)
-    //         .text("Anupam will be in touch.")
-    //         .css("color", "orange");
-    // });
-    //         },
-    //     });
-    // });
-
     // SCROLLING- REPETITIVE CODE
     // $(".js--scroll--to--home").click(function () {
     //     $("html, body").animate({ scrollTop: $("#home").offset().top });
@@ -172,7 +148,7 @@ $(document).ready(function () {
                 {
                     scrollTop: dest,
                 },
-                500,
+                1000,
                 "swing"
             );
             hashTagActive = this.hash;
