@@ -892,15 +892,15 @@ footer ion-icon {
         display: none;
         position: absolute;
         left: 0;
-        top: 30px;
+        top: 40px;
         z-index: 10;
         background: #2d3436;
     }
     .main-nav li {
         color: #fff;
         text-align: left;
-        margin: 5px 0;
-        font-size: 80%;
+        margin: 7px 0;
+        font-size: 90%;
     }
     nav .mobile-nav-icon {
         display: block;
@@ -924,9 +924,6 @@ footer ion-icon {
     }
     .button {
         font-size: 80%;
-    }
-    nav {
-        height: 30px;
     }
     nav ul {
         font-size: 70%;
