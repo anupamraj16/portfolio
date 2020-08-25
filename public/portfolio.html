@@ -76,8 +76,9 @@
                                 class="scroll"
                                 id="nav-publications"
                                 href="#publications"
-                                >publications</a
                             >
+                                publications
+                            </a>
                         </li>
                         <li>
                             <a class="scroll" id="nav-contact" href="#contact"
@@ -98,61 +99,68 @@
                 </div>
                 <div class="header-bar" data-aos="fade-right"></div>
 
-                <div class="flex row block">
+                <div id="features" class="flex row block">
                     <div class="flex row">
-                      <div class="flex bullet-wrap" data-aos="flip-left">
-                        <div class="circle-wrap" data-aos="zoom-in">
-                          <div class="circle">
-                            <ion-icon name="speedometer-outline"></ion-icon>
-                          </div>
+                        <div class="flex bullet-wrap" data-aos="flip-left">
+                            <div class="circle-wrap" data-aos="zoom-in">
+                                <div class="circle">
+                                    <ion-icon
+                                        name="speedometer-outline"
+                                    ></ion-icon>
+                                </div>
+                            </div>
+                            <div class="label bold">
+                                Fast
+                            </div>
                         </div>
-                        <div class="label bold">
-                          Fast
-                        </div>
-                      </div>
-        
-                      <div class="flex bullet-wrap" data-aos="flip-left" data-aos-delay="200">
                         <div
-                          class="circle-wrap" data-aos="zoom-in"
+                            class="flex bullet-wrap"
+                            data-aos="flip-left"
+                            data-aos-delay="200"
                         >
-                          <div class="circle">
-                            <ion-icon name="apps-outline"></ion-icon>
-                          </div>
+                            <div class="circle-wrap" data-aos="zoom-in">
+                                <div class="circle">
+                                    <ion-icon name="desktop-outline"></ion-icon>
+                                </div>
+                            </div>
+                            <div class="label bold">
+                                Responsive
+                            </div>
                         </div>
-                        <div class="label bold">
-                            Pixel Perfect Code
-                        </div>
-                      </div>
-                      <div class="flex bullet-wrap" data-aos="flip-left" data-aos-delay="400">
+
                         <div
-                          class="circle-wrap" data-aos="zoom-in"
+                            class="flex bullet-wrap"
+                            data-aos="flip-left"
+                            data-aos-delay="400"
                         >
-                          <div class="circle">
-                            <ion-icon name="build-outline"></ion-icon>
-                          </div>
+                            <div class="circle-wrap" data-aos="zoom-in">
+                                <div class="circle">
+                                    <ion-icon name="apps-outline"></ion-icon>
+                                </div>
+                            </div>
+                            <div class="label bold">
+                                Pixel Perfect Code
+                            </div>
                         </div>
-                        <div class="label bold">
-                            Tailered To Your Needs
-                        </div>
-                      </div>
-        
-                      <div class="flex bullet-wrap" data-aos="flip-left" data-aos-delay="600">
                         <div
-                          class="circle-wrap" data-aos="zoom-in"
+                            class="flex bullet-wrap"
+                            data-aos="flip-left"
+                            data-aos-delay="600"
                         >
-                          <div class="circle">
-                            <ion-icon name="rocket-outline"></ion-icon>
-                          </div>
+                            <div class="circle-wrap" data-aos="zoom-in">
+                                <div class="circle">
+                                    <ion-icon name="build-outline"></ion-icon>
+                                </div>
+                            </div>
+                            <div class="label bold">
+                                Tailered To Your Needs
+                            </div>
                         </div>
-                        <div class="label bold">
-                            Dynamic
-                        </div>
-                      </div>
                     </div>
+                </div>
 
-
-                <div class="skills flex row">
-                    <div class="flex" data-aos="fade-right">
+                <div id="skills" class="skills flex row">
+                    <div id="about-me" class="flex one" data-aos="fade-right">
                         <img
                             src="img/me.jpg"
                             class="me"
@@ -185,7 +193,11 @@
                         </div>
                     </div>
                     <!-- BAR GRAPH -->
-                    <div class="flex block bars-wrap" data-aos="fade-left">
+                    <div
+                        id="bar-graph"
+                        class="flex block bars-wrap"
+                        data-aos="fade-left"
+                    >
                         <div class="bar flex">
                             <div
                                 class="bar fill"
@@ -335,6 +347,22 @@
                     </div>
                     <button type="button" id="shoppers">LEARN MORE</button>
                 </div>
+                <div
+                    class="mix js"
+                    data-aos="fade-up"
+                    data-aos-delay="600"
+                    data-aos-duration="400"
+                    data-aos-offset="-800"
+                >
+                    <div class="card"></div>
+                    <div class="text">
+                        <div>
+                            Shopper's: Redefining Online Shopping
+                        </div>
+                        <span class="highlight">JavaScript/Node.js</span>
+                    </div>
+                    <button type="button" id="shoppers">LEARN MORE</button>
+                </div>
             </div>
 
             <!-- MODAL -->
@@ -389,7 +417,11 @@
                 </div>
                 <div class="header-bar" data-aos="fade-right"></div>
 
-                <div class="flex row wrap" data-aos="fade-in">
+                <div
+                    id="publications-group"
+                    class="flex row wrap"
+                    data-aos="fade-in"
+                >
                     <div class="flex row">
                         <div class="publication-wrap">
                             <div class="fade">
@@ -434,8 +466,7 @@
                                         A surge in the commercial sector
                                         especially in the Tier-1 cities has been
                                         identified across the country. Due to
-                                        the demand for an increase in the
-                                        commercial spaces...
+                                        the demand for...
                                     </div>
                                 </a>
                             </div>
