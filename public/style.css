@@ -1029,7 +1029,6 @@ footer ion-icon {
     textarea {
         font-size: 80%;
         width: 325px;
-        height: 25px;
     }
     textarea {
         height: 100px;
@@ -1060,12 +1059,7 @@ footer ion-icon {
     }
     input,
     textarea {
-        font-size: 80%;
         width: 300px;
-        height: 25px;
-    }
-    textarea {
-        height: 100px;
     }
     #scroll-to-home {
         right: 10px;
