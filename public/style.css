@@ -399,7 +399,7 @@ section:nth-of-type(3) button:focus {
     background: url("img/excursion.jpg") center center/cover;
 }
 #gallery .mix:nth-child(2) .card {
-    background: url("img/shoppers.jpg") center center/cover;
+    background: url("img/api.jpg") center center/cover;
 }
 #gallery .mix:nth-child(3) .card {
     background: url("img/shoppers.jpg") center center/cover;
