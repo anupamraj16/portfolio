@@ -551,7 +551,7 @@ footer ion-icon {
 /* ----------------------------------------------- */
 
 .modal {
-    /* display: none; */
+    display: none;
     align-items: flex-start;
     text-align: left;
     overflow: auto;
