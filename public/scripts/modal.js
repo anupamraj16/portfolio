@@ -28,6 +28,12 @@ $(document).ready(function () {
                 "Excursion API lets other apps consume the data sent by Excursion backend. Third parties apps can use authentication, get tour data, book tours and much more through this API.",
             link: "https://documenter.getpostman.com/view/11969191/TVCZbBMH",
         },
+        chat: {
+            title: "The Chat App",
+            tag: "REAL TIME CHAT APP USING SOCKET.IO",
+            detail: "Built with Node.js and Socket.IO.",
+            link: "https://socket-io-realtime-chat.herokuapp.com/",
+        },
     };
 
     function fillModal(id) {
