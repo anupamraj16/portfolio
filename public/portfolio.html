@@ -385,12 +385,9 @@
             </div>
 
             <!-- MODAL -->
-            <!-- <div class="modal-wrap flex"> -->
-            <!-- <div class="mask"> -->
             <div class="modal flex" id="modal">
                 <div class="modal-window">
                     <div class="carousel-wrap">
-                        <!-- <div class="window"> -->
                         <div id="carousel">
                             <div class="slide"></div>
                             <div class="slide"></div>
@@ -404,23 +401,24 @@
                             id="carousel-next"
                             name="play-forward-circle-outline"
                         ></ion-icon>
-                        <!-- </div> -->
                     </div>
-                    <div class="info-box">
+                    <div class="info-box flex">
                         <div class="title"></div>
                         <div class="tag"></div>
                         <div class="detail"></div>
-                        <a class="button" href="#" target="_blank">
+                        <div class="flex modal-bottom">
+                            <a class="button" href="#" target="_blank">
+                                <ion-icon
+                                    id="open-website"
+                                    name="open-outline"
+                                ></ion-icon
+                                >VIEW SITE
+                            </a>
                             <ion-icon
-                                id="open-website"
-                                name="open-outline"
-                            ></ion-icon
-                            >VIEW SITE
-                        </a>
-                        <ion-icon
-                            id="modal-close"
-                            name="close-circle-outline"
-                        ></ion-icon>
+                                id="modal-close"
+                                name="close-circle-outline"
+                            ></ion-icon>
+                        </div>
                     </div>
                 </div>
             </div>

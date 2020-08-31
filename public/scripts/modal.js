@@ -1,9 +1,46 @@
 $(document).ready(function () {
     var carousel = $("#carousel"),
         slideWidth = 700,
-        threshold = slideWidth / 4,
+        threshold = slideWidth / 3,
         dragStart,
         dragEnd;
+
+    var windowWidth = $(window).innerWidth();
+    var windowHeight = $(window).innerHeight();
+    // SHOW MODAL
+    var modal = $("#modal");
+    var modalWindow = $(".modal-window");
+    var open = $(".mix > button");
+    var close = $("#modal-close");
+    open.click(function (e) {
+        e.stopPropagation();
+        // modal.show();
+        modal.css("display", "flex");
+        modalWindow.show().addClass("show");
+    });
+    close.click(function () {
+        modal.hide();
+        modalWindow.hide().removeClass("show");
+    });
+
+    modalWindow.click(function (e) {
+        e.stopPropagation();
+    });
+    $(window).mousedown(function (event) {
+        if (event.target.id == "modal") {
+            modal.hide();
+        }
+    });
+    $("#gallery button").on("click", function () {
+        fillModal(this.id);
+    });
+
+    $("#carousel-next").click(function () {
+        shiftSlide(-1);
+    });
+    $("#carousel-previous").click(function () {
+        shiftSlide(1);
+    });
 
     // FILL MODAL WITH DATA
     var modalText = {
@@ -49,7 +86,7 @@ $(document).ready(function () {
                     id +
                     "-" +
                     index +
-                    ".jpg') center center/cover",
+                    ".jpg') 0% 0%/cover",
             });
         });
     }
@@ -57,9 +94,24 @@ $(document).ready(function () {
     function drag() {
         return dragEnd - dragStart;
     }
+
+    // RESPONSIVE MODAL
     slideWidth =
-        ($(".modal").innerWidth() * parseInt($(".modal-window").css("width"))) /
-        100;
+        (modal.innerWidth() * parseInt($(".modal-window").css("width"))) / 100;
+
+    if (windowHeight < windowWidth) {
+        modalWindow.css("height", windowHeight);
+        modalWindow.css("width", slideWidth);
+    } else if (windowHeight >= windowWidth) {
+        var modalWidth =
+            (modal.innerWidth() * parseInt($(".modal-window").css("width"))) /
+            100;
+        if (windowHeight > windowWidth * 1.25) {
+            modalWindow.css("height", modalWidth * 1.25);
+        } else {
+            modalWindow.css("height", modalWidth * 1);
+        }
+    }
 
     // SLIDE IMAGE
     function shiftSlide(direction) {
@@ -79,40 +131,6 @@ $(document).ready(function () {
             carousel.css("transform", "translateX(0px)");
         }, 700);
     }
-
-    // SHOW MODAL
-    var modal = $("#modal");
-    var modalWindow = $(".modal-window");
-    var open = $(".mix > button");
-    var close = $("#modal-close");
-    open.click(function (e) {
-        e.stopPropagation();
-        modal.show();
-        modalWindow.show().addClass("show");
-    });
-    close.click(function () {
-        modal.hide();
-        modalWindow.hide().removeClass("show");
-    });
-
-    modalWindow.click(function (e) {
-        e.stopPropagation();
-    });
-    $(window).mousedown(function (event) {
-        if (event.target.id == "modal") {
-            modal.hide();
-        }
-    });
-    $("#gallery button").on("click", function () {
-        fillModal(this.id);
-    });
-
-    $("#carousel-next").click(function () {
-        shiftSlide(-1);
-    });
-    $("#carousel-previous").click(function () {
-        shiftSlide(1);
-    });
 
     // DRAGGING IMAGE FUNCTION
     carousel.on("mousedown", function () {

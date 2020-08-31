@@ -67,7 +67,7 @@ li {
 .header {
     color: #d24d57;
     font-family: "Lato";
-    font-size: 200%;
+    font-size: 2rem;
     font-weight: 700;
     position: relative;
     padding-top: 30px;
@@ -98,7 +98,7 @@ li {
     width: 100%;
 }
 .text {
-    font-size: 250%;
+    font-size: 2.5rem;
     font-weight: 400;
     line-height: 120%;
     color: #fff;
@@ -114,7 +114,7 @@ li {
     color: #fff;
     box-sizing: inherit;
     cursor: pointer;
-    font-size: 100%;
+    font-size: 1rem;
     padding: 10px 20px;
     background: transparent;
     transition: all 0.5s;
@@ -159,7 +159,7 @@ nav.sticky {
 }
 nav ul {
     list-style: none;
-    font-size: 90%;
+    font-size: 0.9rem;
     text-transform: uppercase;
     transition: color 0.5s;
     position: absolute;
@@ -184,7 +184,7 @@ nav .mobile-nav-icon {
     display: none;
 }
 nav ion-icon {
-    font-size: 170%;
+    font-size: 1.7rem;
     color: #fff;
 }
 
@@ -232,7 +232,7 @@ section:nth-of-type(2) .bullet-wrap {
     padding: 0 0 60px 0;
 }
 section:nth-of-type(2) .bullet-wrap .label.bold {
-    font-size: 100%;
+    font-size: 1rem;
 }
 .circle-wrap {
     display: inline-block;
@@ -251,7 +251,7 @@ section:nth-of-type(2) .bullet-wrap .label.bold {
     border-radius: 50%;
 }
 .circle ion-icon {
-    font-size: 220%;
+    font-size: 2.2rem;
     color: #fff;
     margin: 25% 25%;
 }
@@ -261,14 +261,14 @@ section:nth-of-type(2) .me {
 }
 section:nth-of-type(2) .label {
     color: #555;
-    font-size: 120%;
+    font-size: 1.2rem;
     font-weight: 500;
     margin: 20px 0 15px 0;
 }
 section:nth-of-type(2) .skills-text {
     color: #1f1f1f;
     text-align: center;
-    font-size: 80%;
+    font-size: 0.8rem;
     line-height: 140%;
     font-weight: 400;
 }
@@ -284,7 +284,7 @@ section:nth-of-type(2) .bar {
     align-items: flex-end;
     background-color: #eee;
     color: #666;
-    font-size: 80%;
+    font-size: 0.8rem;
     font-weight: 400;
     height: 27px;
     margin: 0 0 22px 0;
@@ -304,14 +304,14 @@ section:nth-of-type(2) .bar .tag {
     top: 0;
     background-color: #c0392b;
     color: #fff;
-    font-size: 80%;
+    font-size: 0.8rem;
     font-weight: 400;
     height: 100%;
     width: 130px;
     padding: 0px;
 }
 section:nth-of-type(2) .bar span {
-    font-size: 80%;
+    font-size: 0.8rem;
 }
 
 /* ----------------------------------------------- */
@@ -330,7 +330,7 @@ section:nth-of-type(3) button {
     border: none;
     color: #414141;
     cursor: pointer;
-    font-size: 90%;
+    font-size: 0.9rem;
     font-weight: 550;
     padding: 7px 15px;
     margin: auto 30px;
@@ -369,7 +369,7 @@ section:nth-of-type(3) button:focus {
     position: absolute;
     width: 100%;
     color: #555;
-    font-size: 100%;
+    font-size: 1rem;
     transition: all 0.3s ease-in-out;
     opacity: 0;
 }
@@ -383,7 +383,7 @@ section:nth-of-type(3) button:focus {
     right: 0;
     position: absolute;
     border: 2px solid #e67e22;
-    font-size: 80%;
+    font-size: 0.8rem;
     margin: auto;
     padding: 7px 15px;
     opacity: 0;
@@ -432,7 +432,7 @@ section:nth-of-type(4) .publication-wrap #thumb-4 {
 
 section:nth-of-type(4) .label {
     color: #555;
-    font-size: 80%;
+    font-size: 0.8rem;
     font-weight: 400;
     line-height: 140%;
     justify-content: center;
@@ -447,7 +447,7 @@ section:nth-of-type(4) .thumb {
 }
 section:nth-of-type(4) .date {
     font-family: "Open sans";
-    font-size: 70%;
+    font-size: 0.7rem;
     text-align: left;
     margin: 10px 0;
 }
@@ -459,7 +459,7 @@ section:nth-of-type(4) .bar {
 }
 section:nth-of-type(4) .text {
     color: #555;
-    font-size: 80%;
+    font-size: 0.8rem;
     line-height: 140%;
     text-align: left;
 }
@@ -477,7 +477,7 @@ section:nth-of-type(5) .header-bar {
 input,
 textarea {
     font-family: Lato;
-    font-size: 80%;
+    font-size: 0.8rem;
     font-weight: 400;
     color: #e0e0e0;
     background: rgb(37, 37, 37);
@@ -493,7 +493,7 @@ textarea {
 }
 section:nth-of-type(5) .text {
     color: #adadad;
-    font-size: 90%;
+    font-size: 0.9rem;
     padding: 0 0 10px 0;
 }
 section:nth-of-type(5) .hidden {
@@ -507,7 +507,7 @@ section:nth-of-type(5) button {
     box-sizing: inherit;
     cursor: pointer;
     background: #e67e22;
-    font-size: 100%;
+    font-size: 1rem;
     padding: 10px 20px;
     margin: auto;
     background: transparent;
@@ -537,12 +537,12 @@ footer a {
 .footnote {
     text-align: center;
     color: #d4d4d4;
-    font-size: 70%;
+    font-size: 0.7rem;
 }
 
 footer ion-icon {
     color: #d4d4d4;
-    font-size: 150%;
+    font-size: 1.5rem;
 }
 
 #scroll-to-home {
@@ -555,9 +555,6 @@ footer ion-icon {
 
 .modal {
     display: none;
-    align-items: flex-start;
-    text-align: left;
-    overflow: auto;
     position: fixed;
     left: 0;
     top: 0;
@@ -567,41 +564,11 @@ footer ion-icon {
     z-index: 10;
 }
 
-.modal .button {
-    background: #e67e22;
-    position: absolute;
-    bottom: 25px;
-    left: 25px;
-    color: #fff;
-    cursor: pointer;
-    font-size: 70%;
-    font-weight: 600;
-    padding: 5px 10px;
-    transition: all 0.5s;
-}
-
-.modal .button:hover {
-    background: #fff;
-    color: #e67e22;
-    border: 2px solid #e67e22;
-}
-.modal .button ion-icon {
-    font-size: 130%;
-    vertical-align: middle;
-    /* margin-top: -5px; */
-    padding: 5px 5px 5px 0;
-}
-.modal .button:hover ion-icon {
-    transform: none;
-}
-
 /* CAROUSEL */
 .modal-window {
     background: #fff;
     position: fixed;
     width: 50%;
-    height: 90%;
-    left: 25%;
     top: 0;
     overflow: hidden;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4);
@@ -612,7 +579,7 @@ footer ion-icon {
     transform: scale(1);
 }
 .carousel-wrap {
-    height: 65%;
+    height: 60%;
     margin: 0 auto;
     position: relative;
 }
@@ -633,14 +600,19 @@ footer ion-icon {
 /* INFO-BOX */
 .modal .info-box {
     position: fixed;
-    height: 35%;
+    height: 40%;
     width: 100%;
+    text-align: left;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
     border-top: 3px solid #2a2a2a;
     padding: 0 20px 15px 20px;
     background: #fff;
+    overflow-y: scroll;
 }
 .modal .title {
-    font-size: 140%;
+    font-size: 1.2rem;
     font-weight: 500;
     padding: 20px 0 0 0;
 }
@@ -648,13 +620,14 @@ footer ion-icon {
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
     color: #8a8a8a;
     display: block;
-    font-size: 70%;
+    font-size: 90%;
     font-weight: 500;
     padding: 10px 0;
 }
 .modal .detail {
-    font-size: 80%;
+    font-size: 0.8rem;
     font-weight: 300;
+    text-align: left;
     color: black;
     line-height: 140%;
     margin-top: 12px;
@@ -668,20 +641,52 @@ footer ion-icon {
     bottom: 0;
     color: #fff;
     cursor: pointer;
-    font-size: 150%;
+    font-size: 1.5rem;
     padding: 5px 10px;
     z-index: 10;
+}
+#carousel-previous {
+    left: 0;
 }
 #carousel-next {
     right: 0;
 }
+.modal-bottom {
+    align-items: flex-end;
+    flex-grow: 1;
+    width: 100%;
+    height: 30px;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.modal .button {
+    background: #e67e22;
+    color: #fff;
+    cursor: pointer;
+    font-size: 0.7rem;
+    font-weight: 600;
+    padding: 0 10px;
+    transition: all 0.5s;
+}
+
+.modal .button:hover {
+    background: #fff;
+    color: #e67e22;
+    border: 2px solid #e67e22;
+}
+.modal .button ion-icon {
+    font-size: 1.3rem;
+    vertical-align: middle;
+    padding: 5px 5px 5px 0;
+}
+.modal .button:hover ion-icon {
+    transform: none;
+}
 #modal-close {
-    position: absolute;
-    bottom: 25px;
-    right: 25px;
     color: #313131;
     cursor: pointer;
-    font-size: 150%;
+    font-size: 1.5rem;
+    right: 20px;
 }
 
 /* ----------------------------------------------- */
@@ -690,8 +695,6 @@ footer ion-icon {
 @media only screen and (max-width: 1310px) {
     .publication-wrap {
         margin: 20px 40px;
-        /* padding: 20px 10px; */
-        /* height: 420px; */
         width: 400px;
     }
     section:nth-of-type(4) .thumb {
@@ -700,63 +703,29 @@ footer ion-icon {
     section:nth-of-type(4) .label {
         padding-top: 10px;
     }
-    .modal .button {
-        bottom: 25px;
-        left: 25px;
-        font-size: 90%;
-        padding: 5px 10px;
-    }
-    .modal .button ion-icon {
-        font-size: 130%;
-        padding: 5px 5px 5px 0;
-    }
-
     /* CAROUSEL */
     .modal-window {
-        width: 90%;
-        left: 5%;
+        width: 70%;
     }
-    .carousel-wrap {
-        height: 45%;
-    }
-
     /* INFO-BOX */
     .modal .info-box {
-        height: 55%;
         padding: 0 25px 15px 25px;
-    }
-    .modal .title {
-        font-size: 130%;
-        padding: 20px 0 0 0;
-    }
-    .modal .tag {
-        font-size: 100%;
-        padding: 10px 0;
-    }
-    .modal .detail {
-        font-size: 90%;
-        /* margin-top: 12px; */
-    }
-    #modal-close {
-        bottom: 25px;
-        right: 25px;
-        font-size: 150%;
     }
 }
 
 /* Small tablet to big tablet: from 768px to 1023px */
 @media only screen and (max-width: 1023px) {
     .text {
-        font-size: 180%;
+        font-size: 1.8rem;
     }
     .button {
-        font-size: 80%;
+        font-size: 1.8rem;
     }
     nav ul {
-        font-size: 75%;
+        font-size: 0.75rem;
     }
     .header {
-        font-size: 170%;
+        font-size: 1.7rem;
     }
     section:nth-of-type(2) .bullet-wrap {
         padding-bottom: 30px;
@@ -766,11 +735,11 @@ footer ion-icon {
         width: 75px;
     }
     .circle ion-icon {
-        font-size: 180%;
+        font-size: 1.8rem;
     }
 
     section:nth-of-type(2) .bullet-wrap .label.bold {
-        font-size: 90%;
+        font-size: 0.9rem;
     }
     #skills {
         flex-direction: column;
@@ -784,24 +753,23 @@ footer ion-icon {
         height: 225px;
     }
     section:nth-of-type(2) .label {
-        font-size: 100%;
+        font-size: 1rem;
     }
     section:nth-of-type(2) .skills-text {
-        font-size: 75%;
+        font-size: 0.75rem;
     }
     section:nth-of-type(2) .bar {
-        /* font-size: 80%; */
         margin: 0 0 22px 0;
     }
 
     section:nth-of-type(2) .bar .tag {
-        font-size: 80%;
+        font-size: 0.8rem;
     }
     section:nth-of-type(2) .bar span {
-        font-size: 80%;
+        font-size: 0.8rem;
     }
     section:nth-of-type(3) button {
-        font-size: 80%;
+        font-size: 0.8rem;
     }
     #gallery .mix .card {
         height: 244px;
@@ -818,50 +786,18 @@ footer ion-icon {
     section:nth-of-type(4) .label {
         padding-top: 10px;
     }
-    .modal .button {
-        bottom: 25px;
-        left: 25px;
-        font-size: 80%;
-        padding: 5px 10px;
-    }
-    .modal .button ion-icon {
-        font-size: 120%;
-        padding: 5px 5px 5px 0;
-    }
-
-    /* CAROUSEL */
-    .modal-window {
-        width: 100%;
-        left: 0;
-    }
-    .carousel-wrap {
-        height: 45%;
-        margin: 0 auto;
-    }
 
     /* INFO-BOX */
-    .modal .info-box {
-        height: 55%;
-        padding: 0 25px 15px 25px;
-    }
     .modal .title {
-        font-size: 120%;
         padding: 15px 0 0 0;
-    }
-    .modal .tag {
-        font-size: 90%;
-        padding: 10px 0;
-    }
-    .modal .detail {
-        font-size: 80%;
-        margin-top: 12px;
     }
 }
 
 /* Small phones to small tablets: from 481px to 767px */
 @media only screen and (max-width: 767px) {
-    .text {
-        font-size: 180%;
+    html,
+    body {
+        font-size: 18px;
     }
     .button {
         font-size: 80%;
@@ -963,58 +899,33 @@ footer ion-icon {
     section:nth-of-type(5) .header-bar {
         margin: 4px 0 20px 0;
     }
+    .modal-window {
+        width: 100%;
+    }
     .modal .button {
         bottom: 15px;
         left: 15px;
-        font-size: 60%;
-        padding: 5px 10px;
-    }
-    .modal .button ion-icon {
-        font-size: 120%;
-        padding: 5px 5px 5px 0;
-    }
-
-    /* CAROUSEL */
-    .modal-window {
-        width: 100%;
-        left: 0;
-    }
-    .carousel-wrap {
-        height: 45%;
-        margin: 0 auto;
     }
 
     /* INFO-BOX */
     .modal .info-box {
-        height: 55%;
         padding: 0 15px 15px 15px;
     }
     .modal .title {
-        font-size: 100%;
         padding: 15px 0 0 0;
-    }
-    .modal .tag {
-        font-size: 70%;
-        padding: 10px 0;
-    }
-    .modal .detail {
-        font-size: 70%;
-        margin-top: 12px;
     }
 
     /* ICONS */
     #carousel-previous,
     #carousel-next {
-        font-size: 150%;
         padding: 5px 10px;
-    }
-    #modal-close {
-        bottom: 15px;
-        right: 15px;
-        font-size: 150%;
     }
 }
 @media only screen and (max-width: 640px) {
+    html,
+    body {
+        font-size: 16px;
+    }
     nav {
         position: fixed;
         top: 0;
@@ -1049,9 +960,15 @@ footer ion-icon {
     section:nth-of-type(4) .thumb {
         height: 230px;
     }
+    .carousel-wrap {
+        height: 50%;
+    }
+    .modal .info-box {
+        height: 50%;
+    }
 }
 
-/* Small phones: from 0 to 480px */
+/* Small phones: from 350px to 480px */
 @media only screen and (max-width: 480px) {
     .text {
         font-size: 150%;
@@ -1176,62 +1093,19 @@ footer ion-icon {
     section:nth-of-type(5) .header-bar {
         margin: 4px 0 10px 0;
     }
+    .modal .button {
+        padding: 1px 5px;
+    }
+
     #scroll-to-home {
         right: 20px;
     }
-    .modal .button {
-        bottom: 15px;
-        left: 15px;
-        font-size: 60%;
-        padding: 5px 10px;
-    }
-    .modal .button ion-icon {
-        font-size: 120%;
-        padding: 5px 5px 5px 0;
-    }
-
-    /* CAROUSEL */
-    .modal-window {
-        width: 100%;
-        left: 0;
-        height: 80%;
-    }
-    .carousel-wrap {
-        height: 45%;
-        margin: 0 auto;
-    }
-
-    /* INFO-BOX */
-    .modal .info-box {
-        height: 55%;
-        padding: 0 15px 15px 15px;
-    }
-    .modal .title {
-        font-size: 100%;
-        padding: 15px 0 0 0;
-    }
-    .modal .tag {
-        font-size: 70%;
-        padding: 10px 0;
-    }
-    .modal .detail {
-        font-size: 70%;
-        margin-top: 12px;
-    }
-
-    /* ICONS */
-    #carousel-previous,
-    #carousel-next {
-        font-size: 150%;
-        padding: 5px 10px;
-    }
-    #modal-close {
-        bottom: 15px;
-        right: 15px;
-        font-size: 150%;
-    }
 }
 @media only screen and (max-width: 350px) {
+    html,
+    body {
+        font-size: 15px;
+    }
     section:nth-of-type(3) button {
         font-size: 60%;
         margin: 0 2px;
@@ -1248,12 +1122,5 @@ footer ion-icon {
     }
     #scroll-to-home {
         right: 10px;
-    }
-
-    /* CAROUSEL */
-    .modal-window {
-        width: 100%;
-        left: 0;
-        height: 90%;
     }
 }
