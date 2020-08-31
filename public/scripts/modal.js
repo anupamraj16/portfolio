@@ -14,7 +14,6 @@ $(document).ready(function () {
     var close = $("#modal-close");
     open.click(function (e) {
         e.stopPropagation();
-        // modal.show();
         modal.css("display", "flex");
         modalWindow.show().addClass("show");
     });
@@ -29,6 +28,7 @@ $(document).ready(function () {
     $(window).mousedown(function (event) {
         if (event.target.id == "modal") {
             modal.hide();
+            modalWindow.hide().removeClass("show");
         }
     });
     $("#gallery button").on("click", function () {
