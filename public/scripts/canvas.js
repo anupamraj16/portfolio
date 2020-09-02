@@ -10,8 +10,8 @@ function floatySpace() {
     var pts = [];
     var center = space.size.$divide(1.8);
     var angle = window.innerHeight;
-    var count = window.innerWidth * 5;
-    if (count > 500) count = 500;
+    var count = window.innerWidth;
+    if (count > 300) count = 300;
     var line = new Line(0, angle).to(space.size.x, 0);
     var mouse = center.clone();
 
