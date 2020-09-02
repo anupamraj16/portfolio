@@ -71,6 +71,13 @@ $(document).ready(function () {
             detail: "Built with Node.js and Socket.IO.",
             link: "https://socket-io-realtime-chat.herokuapp.com/",
         },
+        burger: {
+            title: "The Burger Builder",
+            tag: "REALLY DELICIOUS",
+            detail:
+                "A single page application built with React / Redux and hosted on Firebase.",
+            link: "https://burgerapp-2951d.firebaseapp.com",
+        },
     };
 
     function fillModal(id) {
